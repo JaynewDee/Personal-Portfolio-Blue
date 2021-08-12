@@ -1,8 +1,8 @@
-#root {
-     --primary:var(--primary);
-     --secondary:var(--secondary);
-     --tertiary:var(--tertiary);
-     --accent:var(--accent);
+:root {
+     --primary: #1687A7;
+     --secondary:#D3E0EA;
+     --tertiary:#276678;
+     --accent:#F6F5F5;
 }
 
 * {
@@ -11,35 +11,45 @@
      margin: 0;
 }
 
-.fixed {
-     position: fixed;
-     display: inline-block;
-     background-color: black;
-     height: 3rem;
-     width: 100%;
-}
-
-.fixed p {
-     color: white;
-     text-align: left;
-     align-items: center;
-     font: .8rem Arial, sans-serif;
-}
-
-.nav-rule {
-     border: 1px solid white;
-     width: 1rem;
-     background-color: white;
-}
-
-main {
-     display: flex;
+.nav-bar {
+     display: inline-flex;
      flex-flow: row wrap;
+     justify-content: flex-start;
+     align-items: center;
      margin: auto;
-     padding-top: 3rem;
+     padding: 2rem;
+     color: var(--accent);
+     background-color: var(--primary);
+     max-height: 20%;
+     position: relative;
+     width: 100%;
+     font-family: Lora, sans-serif;
 }
 
-.my-work {
+.nav-link {
+     line-height: 1.5;
+     flex: 0 1 auto;
+     margin: 5px auto;
+     padding: 5px;
+}
+
+#name-plate {
+     width: 10rem;
+     margin: auto 25% auto 5rem;
+     text-align: center;
+     line-height: 1.5;
+}
+
+#name-bar {
+     border: 1px solid;
+     background-color: var(--secondary);
+     width: 100%;
+     align-self: center;
+}
+main {
+     background-color: var(--accent);
+}
+.flex-section {
      display: flex;
      flex-flow: row wrap;
 }
