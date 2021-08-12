@@ -1,0 +1,45 @@
+#root {
+     --primary:var(--primary);
+     --secondary:var(--secondary);
+     --tertiary:var(--tertiary);
+     --accent:var(--accent);
+}
+
+* {
+     box-sizing: border-box;
+     border: 0 solid;
+     margin: 0;
+}
+
+.fixed {
+     position: fixed;
+     display: inline-block;
+     background-color: black;
+     height: 3rem;
+     width: 100%;
+}
+
+.fixed p {
+     color: white;
+     text-align: left;
+     align-items: center;
+     font: .8rem Arial, sans-serif;
+}
+
+.nav-rule {
+     border: 1px solid white;
+     width: 1rem;
+     background-color: white;
+}
+
+main {
+     display: flex;
+     flex-flow: row wrap;
+     margin: auto;
+     padding-top: 3rem;
+}
+
+.my-work {
+     display: flex;
+     flex-flow: row wrap;
+}
